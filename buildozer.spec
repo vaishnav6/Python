@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = vimoweb
+title = Vimoweb
 
 # (str) Package name
 package.name = myapp
@@ -30,23 +30,23 @@ source.include_exts = py,png,jpg,kv,atlas
 
 # (str) Application versioning (method 1)
 version = 0.1
-android.permissions = INTERNET
+
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
 # version.filename = %(source.dir)s/main.py
-#android.permissions = RECORD_AUDIO,INTERNET
+
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,hostpython3==3.7.6,kivy,kivymd,pillow,requests
+requirements = python3,kivy,kivymd
+
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/data/presplash.png
-#presplash.filename = lion.png
+
 # (str) Icon of the application
-#icon.filename = lion.png
 #icon.filename = %(source.dir)s/data/icon.png
 
 # (list) Supported orientations
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.7.6
+osx.python_version = 3
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
@@ -102,7 +102,7 @@ fullscreen = 0
 
 # (int) Target Android API, should be as high as possible.
 #android.api = 31
-
+android.permissions = INTERNET
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21
 
