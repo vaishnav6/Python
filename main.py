@@ -8,7 +8,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 
 Window.size = (350,600)
 LabelBase.register(name='lion', 
-                   fn_regular='lion.ttf')
+                   fn_regular='https://drive.google.com/uc?export=download&id=1LuVQC4E_oqUtMIUI9zz29ZaK9RIBqLnx')
 kv = """
 <StartScreen>:
     name: 'start'
@@ -72,7 +72,7 @@ class Vimoweb(MDApp):
         else:
             print(f"Label with ID {label_id} not found on the current screen.")
 
-        sound = SoundLoader.load('intro.wav')
+        sound = SoundLoader.load('https://drive.google.com/uc?export=download&id=1UL_Y9kqxxnZbbIRVbwDuXk9XSX938ue2')
         if sound:
             sound.play()
 
