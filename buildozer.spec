@@ -30,7 +30,7 @@ source.include_exts = py,png,jpg,kv,atlas
 
 # (str) Application versioning (method 1)
 version = 0.1
-
+android.permissions = INTERNET
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
 # version.filename = %(source.dir)s/main.py
