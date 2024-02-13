@@ -99,16 +99,27 @@ fullscreen = 0
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
-
-# (int) Target Android API, should be as high as possible.
-#android.api = 31
-android.permissions = INTERNET
-# (int) Minimum API your APK / AAB will support.
-#android.minapi = 21
+android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 20
+# android.sdk = 20
 
+# (str) Android NDK version to use
+# android.ndk = 23b
+
+# (int) Android NDK API to use
+android.ndk_api = 21
+# (int) Target Android API, should be as high as possible.
+#android.api = 31
+# (int) Minimum API your APK / AAB will support.
+#android.minapi = 21
+android.archs = armeabi-v7a,arm64-v8a
+
+# (str) APK should include the Python interpreter
+android.builtin = 1
+# (int) Android SDK version to use
+#android.sdk = 20
+p4a.bootstrap = sdl2
 # (str) Android NDK version to use
 #android.ndk = 23b
 
@@ -450,3 +461,7 @@ warn_on_root = 1
 #    Then, invoke the command line with the "demo" profile:
 #
 #buildozer --profile demo android debug
+
+android.api = 28
+android.permissions = INTERNET
+android.archs = arm64-v8a, armeabi-v7a
